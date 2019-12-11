@@ -1,0 +1,18 @@
+node server_web{
+component menu_recommendation{
+component professional_qualification
+component register_professional
+component look_for_professionals
+}
+}
+node browser
+node mobile{
+component phone_gap
+}
+server_web--browser:htp 80
+server_web--mobile:xml/json 80
+
+
+
+
+

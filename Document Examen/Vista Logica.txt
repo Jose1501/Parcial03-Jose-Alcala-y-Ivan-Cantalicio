@@ -1,0 +1,41 @@
+Vista Logica
+Class Professional_List{
+int id
+Look_Professional()
+}
+
+class Person{
+int id
+name:string
+dni:string
+profession:string
+}
+
+Class User{
+int id
+Person_id:integer
+}
+
+Class Professional{
+int id
+Person_id:integer
+}
+
+Class Professional_Selection{
+int id
+Service_Description()
+Professional_Apppointment()
+}
+
+Class Professional_Classification{
+int id
+}
+
+
+Professional_Selection  --  Professional_List
+Professional_Selection "*" -- "1" User
+Person "1" <|.. "1" User
+Person "1" <|.. "1" Professional
+Professional  --o  Professional_List
+Professional_Classification  --o  Professional_List
+
